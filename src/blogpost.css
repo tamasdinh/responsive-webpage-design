@@ -48,6 +48,17 @@ q {
   color: #6e99f5;
 }
 
+b i {
+  font-weight: bolder;
+  color: #0f41ad;
+  font-variant-caps: small-caps;
+}
+
+u {
+  font-size: larger;
+  font-variant-caps: all-petite-caps;
+}
+
 header {
   grid-area: 2/1/2/3;
   background-color: #fffdfd;
