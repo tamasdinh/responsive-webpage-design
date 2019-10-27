@@ -1,0 +1,55 @@
+/* General and small screen rules */
+
+.author-info {
+  display: flex;
+  margin: 0 20px 0 0;
+  color: #52658f;
+  flex-direction: column;
+  align-items: left;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.author-details figure {
+  margin-left: 0;
+}
+
+.author-image {
+  max-width: 30vw;
+}
+
+.author-details figcaption {
+  margin-bottom: 0px;
+}
+
+ul {
+  padding: 0 0 0 0;
+}
+
+.bulleted-list {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0 0 1em 0;
+  list-style-type: none;
+  text-align: justify;
+  padding: 0 40px 0 0;
+}
+
+
+/* Large screen rules */
+
+@media (min-width: 901px) {
+
+  .author-info {
+    flex-direction: column;
+  }
+
+  .author-details {
+    flex-direction: column;
+  }
+
+}

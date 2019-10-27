@@ -1,0 +1,94 @@
+@import 'index.css';
+@import 'author-info.css';
+@import 'post.css';
+
+/* General and small screen rules */
+
+body {
+  display: grid;
+  grid-template-columns: 25vw 1fr;
+  grid-template-rows: 3em 15vh 1fr 5vh;
+  grid-gap: 15px;
+  font-size: 12px;
+  background-color: #fffdfd;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.author-info h2 {
+  margin-top: 30px;
+}
+
+nav {
+  grid-area: 1/1/1/3;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 0 10px;
+  margin: 0;
+  background-color: #6e99f5;
+} 
+
+nav p {
+  color: #fffdfd;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+}
+
+article {
+  font-family: 'Quicksand', sans-serif;
+  padding: 0 20px 0 0;
+}
+
+q {
+  font-weight: bold;
+  font-style: italic;
+  color: #6e99f5;
+}
+
+header {
+  grid-area: 2/1/2/3;
+  background-color: #fffdfd;
+}
+
+footer {
+  grid-area: 5/1/5/3;
+  width: 100%;
+}
+
+.button-container {
+  width: auto;
+  height: 1.5em;
+  padding: 0 0 0 2em;
+  margin: 0 0 0 0;
+  background-image: url('../assets/PNGIX.com_back-button-png_1871332.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/* Medium screen rules */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+  .body {
+    font-size: 15px;
+  }
+
+}
+
+
+/* Large screen rules */
+
+@media (min-width: 901px) {
+
+  body {
+    grid-template-columns: 25vw 1fr;
+    grid-template-rows: 3em 15vh 1fr 5vh;
+    grid-gap: 15px;
+    font-size: 18px;
+  }
+
+}
